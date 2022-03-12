@@ -7,7 +7,6 @@ import com.example.springbootproject.logger.Logger;
 import com.example.springbootproject.repository.DepartureRepository;
 import com.example.springbootproject.repository.WorkerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -71,11 +70,12 @@ public class DepartureService {
             logger.logMessage(String.format("No such departure to update with id = %s", departure.getId()));
             return null;
         } else {
-           return departureRepository.save(departure);
+            return departureRepository.save(departure);
         }
     }
 
     public List<Departure> getDepartures() {
+
         return departureRepository.findAll();
     }
 }

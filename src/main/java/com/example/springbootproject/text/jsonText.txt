@@ -1,0 +1,17 @@
+PUT method JSON example
+http://localhost:8091/workers/update
+{
+    "id": 1,
+    "name": "Antony",
+    "salary": 7000.0,
+    "departure":{"id":1}
+}
+
+POST method JSON example
+http://localhost:8091/workers/create
+{
+    "id": 4,
+    "name" : "Maria",
+    "salary": 20000.0,
+    "departure":{"id":1}
+}

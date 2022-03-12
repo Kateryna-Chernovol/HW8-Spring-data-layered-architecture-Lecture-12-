@@ -4,22 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Entity
-public class Departure {
-
+public class WorkerInfo {
     @Id
-    private int id;
-
-    @Column
-    private String name;
-
-    @Column
-    private String location;
+    private Integer id;
+    private String homeAddress;
+    private Integer age;
 }

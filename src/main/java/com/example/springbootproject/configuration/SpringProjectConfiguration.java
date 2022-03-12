@@ -15,7 +15,7 @@ public class SpringProjectConfiguration {
 
     @Bean
     public Logger logger() {
-        if("dev".equals(env)) {
+        if ("dev".equals(env)) {
             return new DevLogger();
         } else {
             return new ProdLogger();
